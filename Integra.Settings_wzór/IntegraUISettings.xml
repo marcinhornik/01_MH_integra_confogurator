@@ -1,0 +1,169 @@
+<IntegraUISettings Lang="en" Keyboard ="sv" Default="True">
+    <Section        Name="Energy"                          Visible="True"  Order="1"  >
+        <Category   Name="Electricity"       Label="SalaA" Visible="True"  Order="3" />
+        <Category   Name="ElectricityMockup"               Visible="False" Order="2" />
+        <Category   Name="WebGases"                        Visible="True" Order="1"/>
+        <Category   Name="Gases"       Device="True"       Visible="True"  Order="1"  >
+            <Option Name="O2"          Label="ola"           Visible="True" />
+            <Option Name="N20"         Label="nela"           Visible="True" />
+            <Option Name="MA400"       Label="mela"           Visible="True" />
+            <Option Name="SA700"       Label="sela"           Visible="True" />
+            <Option Name="Vacuum"      Label="vela"           Visible="True" />
+        </Category>
+    </Section>
+    <Section Name="Checklists" Visible="True" Order="2">
+        <Category Name="ChecklistPre" Visible="True" Label="PRE" Order="1"/>
+        <Category Name="ChecklistStart" Visible="True" Label="START" Order="2"/>
+        <Category Name="ChecklistEnd" Visible="True" Label="END" Order="3"/>
+    </Section>
+    <Section Name="Devices" Visible="True" Order="3">
+        <Category Name="Lights" Visible="True" Order="1">
+            <Device Name="BmsDali1"           Label="Bms Dali1"         Visible="False" />
+            <Device Name="BmsDali2"           Label="Bms Dali2"         Visible="False" />
+            <Device Name="BmsDaliOnOff"       Label="Bms Dali On/Off"   Visible="False" />
+            <Device Name="Mach1"              Label="M1"                Visible="False" />
+            <Device Name="Mach2"              Label="M2"                Visible="False" />
+            <Device Name="Room"               Label="Room"              Visible="True" />
+            <Device Name="LedLight"           Label="LedLight"          Visible="False" />
+            <Device Name="Alvo1"              Label="A1"                Visible="False" />
+            <Device Name="Alvo2"              Label="A2"                Visible="False" />
+            <Device Name="Trilux1"            Label="Tri1"              Visible="False" />
+            <Device Name="Trilux2"            Label="Tri2"              Visible="False" />
+            <Device Name="Trumph1"            Label="T1"                Visible="False" />
+            <Device Name="Trumph2"            Label="T2"                Visible="False" />
+            <Device Name="Trumph3"            Label="T3"                Visible="False" />
+            <Device Name="Simeon1"            Label="S1"                Visible="False" />
+            <Device Name="Simeon2"            Label="S2"                Visible="False" />
+            <Device Name="Simeon3"            Label="S3"                Visible="False" />
+            <Device Name="Polaris"            Label="Polaris 1"         Visible="False" />
+            <Device Name="Polaris2"           Label="Polaris 2"         Visible="False" />
+            <Device Name="Polaris3"           Label="Polaris 3"         Visible="False" />
+            <Device Name="PolarisP600_Light1" Label="Polaris 1"         Visible="True">
+                <Option Name="BorderColor"    Label="#FF34B4E4"        Visible="True"/>
+            </Device>
+            <Device Name="PolarisP600_Light2" Label="Polaris 2"         Visible="True" >
+                <Option Name="BorderColor"    Label="#FFFABB00"       Visible="True"/>
+            </Device>
+            <Device Name="PolarisP600_Light3" Label="Polaris 3"         Visible="False" >
+                <Option Name="BorderColor"    Label="#FFB5CA25"        Visible="True"/>
+            </Device>
+            <Device Name="KLSMartin1" Label="Martin 1" Visible="False"/>
+            <Device Name="KLSMartin2" Label="Martin 2" Visible="False"/>
+            <Device Name="KLSMartin3" Label="Martin 3" Visible="False"/>
+            <Device Name="KLSMartin4" Label="Martin 4" Visible="False"/>
+        </Category>
+        <Category Name="Annell" Visible="True" Order="1" />
+        <Category Name="Chromaviso" Visible="False" Order="1" />
+        <Category Name="Doors" Visible="True" Order="3">
+            <Device Name="Door1" Visible="True" Order="2" Label="Open" Command="D0"/>
+            <Device Name="Door2" Visible="True" Order="1" Label="Open" Command="D1" />
+            <Device Name="Door3"    Visible="False" Order="3" Label="Open" Command="S10"/>
+        </Category>
+        <Category Name="Windows" Visible="True" Order="4">
+            <Device Name="Window1" Visible="True" Order="1" Label="   UP" Command="S1" />
+            <Device Name="Window1" Visible="True" Order="2" Label="   DOWN" Command="S2"/>
+            <Device Name="Window2" Visible="True" Order="3" Label="  UP" Command="S3" />
+            <Device Name="Window2" Visible="False" Order="4" Label="DOWN" Command="S4"/>
+            <Device Name="Window3" Visible="True" Order="5" Label="  UP" Command="S5" />
+            <Device Name="Window3" Visible="False" Order="6" Label="DOWN" Command="S6"/>
+            <Device Name="Window7" Visible="False" Order="7" Label="ON/OFF" Command="S7"/>
+            <Device Name="Window8" Visible="False" Order="8" Label="ON/OFF" Command="S8"/>
+            <Device Name="Window9" Visible="False" Order="9" Label="ON/OFF" Command="S9"/>
+        </Category>
+        <Category Name="Table"        Device="False"       Visible="False"  Order="2">
+            <Device Name="Etiuda"                            Visible="False">
+                <Option Name="Up"                              Visible="True"/>
+                <Option Name="Down"                            Visible="True"/>
+                <Option Name="Left"                            Visible="True"/>
+                <Option Name="Right"                           Visible="True"/>
+                <Option Name="TrendAnty"                       Visible="True"/>
+                <Option Name="Trend"                           Visible="True"/>
+            </Device>
+            <Device Name="Serenada"                          Visible="False">
+                <Option Name="Flex"                            Visible="True"/>
+                <Option Name="FlexReflex"                      Visible="True"/>
+            </Device>
+            <Device Name="Rapsodia"                          Visible="True">
+                <Option Name="BackUp"                          Visible="True"/>
+                <Option Name="BackDown"                        Visible="True"/>
+                <Option Name="KidneyUp"                        Visible="True"/>
+                <Option Name="KidneyDown"                      Visible="True"/>
+                <Option Name="MoveSurfaceRight"                Visible="True"/>
+                <Option Name="MoveSurfaceLeft"                 Visible="True"/>
+                <Option Name="Zero"                            Visible="True"/>
+            </Device>
+        </Category>
+        <Category Name="Clima"        Device="False"        Visible="True"  Order="1">
+            <Option Name="TemperatureSliderIsEnabled"         Visible="True"/>
+            <Option Name="TemperatureSet"                     Visible="True"/>
+            <Option Name="TemperatureGet"                     Visible="True"/>
+            <Option Name="HumiditySliderIsEnabled"            Visible="True"/>
+            <Option Name="HumiditySet"                        Visible="True"/>
+            <Option Name="HumidityGet"                        Visible="True"/>
+            <Option Name="EnableAutoCorrection"               Visible="False"/>
+            <Option Name="EnableHumidityDiff5AlarmSound"      Visible="False"/>
+            <Option Name="EnableHumidityDiff5AlarmText"       Visible="False"/>
+            <Option Name="Klima1"            Order="1"  Visible="False"  Label="   Cmd1 " Command="CommandConfigExtra1" />
+            <Option Name="Klima1"            Order="2"  Visible="False"  Label="   Cmd2 " Command="CommandConfigExtra2" />
+            <Option Name="Klima2"            Order="3"  Visible="False"  Label="   Cmd3 " Command="CommandConfigExtra3" />
+            <Option Name="Klima2"            Order="4"  Visible="False"  Label="   Cmd4 " Command="CommandConfigExtra4" />
+        </Category>
+        <Category Name="ClimaBms"    Device="False"        Visible="False"  Order="1" />
+        <Category Name="ClimaTom"    Device="False"        Visible="False"  Order="1">
+            <Option Name="Hepa"                            Visible="True"/>
+            <Option Name="Temperature"                     Visible="True"/>
+            <Option Name="Humidity"                        Visible="True"/>
+            <Option Name="Vent"                            Visible="True"/>
+            <Option Name="Pressure"                        Visible="True"/>
+        </Category>
+        <Category Name="Diathermy"        Device="False"       Visible="True"  Order="0">
+            <Option Name="Atom" Label="Atom" Order="1" Visible="True" />
+        </Category>
+        <Category Name="Status"    Device="False" Visible="True" Order="7">
+            <Category Name="Rtls"                 Visible="True"/>
+            <Category Name="XRay"                 Visible="True"/>
+            <Category Name="OnAir"                Visible="True">
+                <Option Name="ShowSources"        Visible="True"/>
+            </Category>
+        </Category>
+    </Section>
+    <Section    Name="Video"                                        Visible="True"  Order="4">
+        <Category Name="CameraControl"    Label="CameraControl"     Visible="True"  Order="3">
+            <Option Name="PTZ"              Label="PTZ"               Visible="False"  Order="1" />
+            <Option Name="SonyCameraVisca"  Label="SonyCameraVisca"   Visible="False"  Order="2" />
+            <Option Name="Alvo"             Label="Alvo"              Visible="False"  Order="3" />
+            <Option Name="Polaris"          Label="Polaris"           Visible="True"  Order="4" />
+            <Option Name="Trumph"           Label="Trumph"            Visible="False"  Order="5" />
+            <Option Name="Arthrax"          Label="ARTHRAX"           Visible="False" Order="0" />
+            <Option Name="Trilux"           Label="Trilux"            Visible="False"  Order="6" />
+            <Option Name="Simeon1"          Label="Simeon1"           Visible="False"  Order="7" />
+            <Option Name="Simeon2"          Label="Simeon2"           Visible="False"  Order="8" />
+            <Option Name="Simeon3"          Label="Simeon3"           Visible="False"  Order="9" />
+        </Category>
+        <Category Name="NecMonitor"           Label=""    Visible="False" Order="2">
+            <Option Name="DVI"                              Label="d" />
+            <Option Name="HDMI"                             Label="h" />
+            <Option Name="SVideo"                           Label="sv" />
+            <Option Name="VGA"                              Label="vg" />
+            <Option Name="Video1"                           Label="vd1" />
+            <Option Name="HdDvd1"                           Label="hd1" />
+        </Category>
+        <Category Name="BarcoVideo"           Label=""   Visible="True" Order="1">
+            <Option Name="HuaweiConference"                Visible="True"/>
+        </Category>
+    </Section>
+    <Section Name="Media" Visible="False" Order="5">
+        <Category Name="Mp3Player" Visible="True" Order="1"/>
+        <Category Name="Mp3Recorder" Visible="True" Order="3"/>
+        <Category Name="BarcoAudio"  Label=""   Visible="True" Order="2" />
+    </Section>
+    <Section Name="Time" Visible="True" Order="6">
+        <Category Name="Clock" Visible="True"/>
+    </Section>
+    <Section Name="BluetoothMobile" Visible="False" Order="7">
+        <Category Name="BTMobile" Visible="True"/>
+    </Section>
+    <Section Name="Services" Visible="False" Order="8">
+        <Category Name="VncClient" Visible="False"/>
+    </Section>
+</IntegraUISettings>

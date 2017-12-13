@@ -1,0 +1,65 @@
+<IntegraSettings>
+    <Category Name="Common">
+        <Setting Name="NoFrame" Value="False" />
+        <Setting Name="Maximized" Value="False" />
+        <Setting Name="NoDevices" Value="False" />
+        <Setting Name="IsCursorVisible" Value="True" />
+        <Setting Name="IsWebAvailable" Value="False" />
+        <Setting Name="ServiceMode" Value="True" />
+        <Setting Name="RightLeftNavigation" Value="True" />
+        <Setting Name="IntegraDataDirectory" Value="C:\IntegraSystemData\IntegraData\" />
+        <Setting Name="DoorUseRoomLightInterface" Value="True" />
+        <Setting Name="ShutdownWindowsViaIntegraExit" Value="False" />
+        <Setting Name="BtnRepetitionInterval" Value="80" />
+        <Setting Name="BtnRepetitionDelay" Value="100" />
+        <Setting Name="HasAlarmSound" Value="True" />
+        <Setting Name="InverseAlvoCameraCommunication" Value="True" />
+        <Setting Name="RequestSurgeryRoomName" Value="OR_1" />
+        <Setting Name="TableDemoModeEnabled" Value="True" />
+        <Setting Name="EnablePolarisLightsDedicatedView" Value="True"/>
+        <Setting Name="EnablePolarisCameraPowerButton" Value="True" />
+        <Setting Name="ShowNotificationMessages" Value="False" />
+        <Setting Name="MusicRestrictedDriveLetters" Value="c,e" />
+        <Setting Name="MusicRestrictedDirectory" Value="Music" />
+        <Setting Name="IsMilkWindowEnabled" Value="True" />
+        <Setting Name="RtlsHost" Value="dev.chimeslab.se" />
+        <Setting Name="WebGasesControlUrl" Value="http://209.162.243.100 " />
+        <Setting Name="RestartTime" Value="false" />
+        <Setting Name="RestartIdleMinutesDelay" Value="30" />
+        <Setting Name="ConnectionStatusCheckingDelay" Value="5" />
+    </Category>
+    <Category Name="Lights">
+        <Device Name="Chromaviso"           IP="127.0.0.1"        Port="8181" />
+        <Device Name="Room"                 IP="127.0.0.1"        Port="10111" />
+        <Device Name="Annell"               IP=""                 Port="42771" RsPort="COM2"   Baudrate="38400" />
+        <Device Name="Simeon"               IP="127.0.0.1"        Port="3001"  RsPort="COM11"  Baudrate="9600"  StatusInterval="0"  ReadInterval="2"   						      />
+        <Device Name="Mach"                 IP="127.0.0.1"        Port="3001"  RsPort="COM111"   Baudrate="19200"  StatusInterval="3000"  ReadInterval="2"   						  />
+        <Device Name="Sola"                 IP="127.0.0.1"        Port="3002"  RsPort="COM22"   Baudrate="12000"  StatusInterval="50000" ReadInterval="2"   						  />
+        <Device Name="Sola2"                IP="127.0.0.1"        Port="3003"  RsPort="COM333"  Baudrate="12000"  StatusInterval="50000" ReadInterval="2"   						  />
+        <Device Name="Alvo"                 IP="127.0.0.1"        Port="5001"                                   StatusInterval="1000"  ReadInterval="2"   						  />
+        <Device Name="Polaris"              IP="127.0.0.1"        Port="3004"  RsPort="COM44"   Baudrate="96000"  StatusInterval="0"     ReadInterval="2"   						  />
+        <Device Name="PolarisP600"          IP="127.0.0.1"        Port="3005"  RsPort="COM777"  Baudrate="9600"   StatusInterval="3500"  ReadInterval="100"  UserThreshold="1500"   />
+        <Device Name="Trilux"               IP="127.0.0.1"        Port="3006"  RsPort="COM6"   Baudrate="19200"  StatusInterval="10000" ReadInterval="2"  						  />
+        <Device Name="Trumph"               IP="127.0.0.1"        Port="3007"  RsPort="COM100" Baudrate="38400"  StatusInterval="10000" ReadInterval="2"  						  />
+        <Device Name="LedLight"             IP="127.0.0.1"        Port="3008"  RsPort="COM8"   Baudrate="38400"  StatusInterval="10000" ReadInterval="2"   						  />
+        <Device Name="KLSMartin"            IP="127.0.0.1"        Port="3009"  RsPort="COM9"   Baudrate="19200"   StatusInterval="5000"  ReadInterval="100"  UserThreshold="500"   />
+    </Category>
+    <Category Name="Clock"                  IP="192.168.101.70"   Port="1001" />
+    <Category Name="Door"                   IP="127.0.0.1"    	  Port="3010" />
+    <Category Name="Window"                 IP="192.168.101.13"   Port="10001" />
+    <Category Name="Table"                  IP=""                 Port="3012"  RsPort="COM12"  Baudrate="38400"   					   ReadInterval="2"  						  />
+    <Category Name="Diathermy"              IP=""                 Port="3013"  RsPort="COM767"   Baudrate="19200"  					   ReadInterval="2"   OutputDevicesNumber="2" />
+    <Category Name="Clima"                  IP="127.0.0.1"        Port="3014"  RsPort=""       Baudrate="19200" />
+    <Category Name="ClimaTom"               IP="127.0.0.1"        Port="3015" />
+    <Category Name="Video">
+        <Device Name="HuaweiApi"            IP="192.168.101.3"    User="api"   Pass="Alvo2016"/>
+        <Device Name="NecMonitor" DvrCh="0"                       Port="3016"  RsPort="COM12"  Baudrate="96000" StatusInterval="5000"   ReadInterval="2"  					  	  />
+        <Device Name="SonyVisca"                                  Port="3017"  RsPort="COM13"  Baudrate="9600"  StatusInterval="0"      ReadInterval="2" 						  />
+    </Category>
+    <Category Name="Energy">
+        <Device Name="Bms"                  IP="192.168.3.120"        Port="502"  RoomName="P2.BO.5B" EnableSoundAlarm="True" />
+        <Device Name="Gases"                IP="127.0.0.1"            Port="3019" EnableSoundAlarm="True"/>
+    </Category>
+    <Category Name="BluetoothMobile" 		IP="127.0.0.1"            Port="3020"  RsPort="COM3" Baudrate="115200"   StatusInterval="1000"    ReadInterval="100"  AutoConn="2"		  />
+    <Category Name="VncServer"              IP="192.168.100.118"   	  Port="5900"  Pass="alvoalvo"/>
+</IntegraSettings>

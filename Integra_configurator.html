@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+    <title>Integra SETTINGS Configurator</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="generator" content="Bluefish 2.2.9" />
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <!-- pobieranie stylu(gdzie jaki div ma sie znajdowac na stronie) z zewnetrznego pliku style.css  -->
+    <script type="text/javascript" src="checkbox.js"></script>
+    <!-- pobieranie skryptu z zewnetrznego pliku checkbox.js  -->
+    <script type="text/javascript" src="zmienne.js"></script>
+    <!-- pobieranie skryptu z zewnetrznego pliku zmienne.js  -->
+
+</head>
+
+<body style="overflow-y:hidden;">
+    <!-- overflow-y:hidden - usuwanie paska skroll pionowego  -->
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+
+
+
+    <div id="Instrukcja"> <b>Wybierz menu, które ma być aktywne w INTEGRZE</b></div>
+
+    <div id="LangApl"><b>Wybierz język aplikacji:</b></div>
+    <select id="Lang" size="1">
+    <option value="PL" selected="selected" >PL</option>
+    <option value="EN">EN</option>
+	<option value="SV">SV</option>
+    </select>
+
+    <!--  <div id="buttonZatw"> <input type="submit" value="ZATWIERDŹ" onClick="sprawdz1(), sprawdz2(), sprawdz3(), sprawdz4(), sprawdz6()"> </div>
+   przycisk z napisem Sprawdź -->
+    <div id="buttonDalejStr1"><a href="#str2" class="buttonDalej">DALEJ</a></div>
+
+
+
+
+
+
+
+    <input type="checkbox" id="Diater" onClick="sprawdz4()">
+    <div id="checkboxDiater">Diatermia</div>
+    <input type="checkbox" id="Light" checked onClick="sprawdz4()">
+    <div id="checkboxLight">Oświetlenie</div>
+    <input type="checkbox" id="Annell" onClick="sprawdz4(),sprawdz10()">
+    <div id="checkboxAnnell">Annell</div>
+    <input type="checkbox" id="Chroma" onClick="sprawdz4()">
+    <div id="checkboxChroma">Ch.Viso</div>
+    <input type="checkbox" id="ACBms" onClick="sprawdz4()">
+    <div id="checkboxACBms">AC_BMS</div>
+    <input type="checkbox" id="AC" onClick="sprawdz4(),sprawdz10()">
+    <div id="checkboxAC">Klima</div>
+    <input type="checkbox" id="Stol" onClick="sprawdz4()">
+    <div id="checkboxStol">Stół</div>
+    <input type="checkbox" id="Drzwi" checked onClick="sprawdz4(),sprawdz10()">
+    <div id="checkboxDrzwi">Drzwi</div>
+    <input type="checkbox" id="Okna" onClick="sprawdz4()">
+    <div id="checkboxOkna">Okna</div>
+    <input type="checkbox" id="Status" onClick="sprawdz4()">
+    <div id="checkboxStatus">Status</div>
+    <input type="checkbox" checked id="Div">
+    <div id="checkboxDiv">Urządzenia</div>
+
+
+    <input type="checkbox" id="checkboxMonit" checked onclick="sprawdz7()">
+    <div id="labelMonit">Monitoring</div>
+    <input type="checkbox" id="checkboxBmsMonit" onclick="sprawdz7()">
+    <div id="labelBmsMonit">BMS_Monit</div>
+    <input type="checkbox" id="checkboxALVOGases" checked onclick="sprawdz7(), sprawdz10()">
+    <div id="labelALVOGases">Gazy_ALVO</div>
+    <input type="checkbox" id="checkboxWebGases" onclick="sprawdz7()">
+    <div id="labelWebGases">Gazy_WEB</div>
+
+
+
+    <div id="labelVideo">Video</div>
+    <input type="checkbox" id="checkboxVideo" onclick="sprawdz8()">
+    <div id="labelCamControll">Ster.Kamer</div>
+    <input type="checkbox" id="checkboxCamControll" onclick="sprawdz8(), sprawdz10()">
+    <div id="labelNecMonitor">NEC Monit.</div>
+    <input type="checkbox" id="checkboxNecMonitor" onclick="sprawdz8()">
+    <div id="labelHuawei">Huawei</div>
+    <input type="checkbox" id="checkboxHuawei" onclick="sprawdz8()">
+    <div id="labelBarco">Barco</div>
+    <input type="checkbox" id="checkboxBarco" onclick="sprawdz8()">
+
+
+
+    <div id="labelTime">Czas</div>
+    <input type="checkbox" checked id="checkboxTime">
+    <div id="labelAlarm">Alarm</div>
+    <input type="checkbox" checked id="checkboxAlarm">
+    <div id="labelBluetooth">Bluetooth</div>
+    <input type="checkbox" id="checkboxBluetooth">
+
+
+    <div id="labelMp3">Mp3</div>
+    <input type="checkbox" id="checkboxMp3" checked onclick="sprawdz9()">
+    <div id="labelMedia">Media</div>
+    <input type="checkbox" id="checkboxMedia" checked onclick="sprawdz9()">
+    <div id="labelVoiceNote">Dyktafon</div>
+    <input type="checkbox" id="checkboxVoiceNote" onclick="sprawdz9()">
+    <div id="labelBarcoAudio">Barco Aud.</div>
+    <input type="checkbox" id="checkboxBarcoAudio" onclick="sprawdz9()">
+
+
+    <img src="img/dev.png" id="imgDev">
+    <img src="img/monitoring.png" id="imgMonitoring">
+    <img src="img/gases_web.png" id="imgGasesWeb">
+    <img src="img/video.png" id="imgVideo">
+    <img src="img/audio.png" id="imgAudio">
+    <img src="img/tools.png" id="imgTools">
+
+
+    <div id="labelorName"><b>Nazwa sali:</b></div>
+    <input id="orName" value="OR_1">
+
+
+    <div id="labelNoFrame"><b>NoFrame:</b></div>
+    <select id="NoFrame" size="1">
+<option value="False"  selected>False</option>
+<option value="True">True</option>
+</select>
+    <div id="labelMaximized"><b>Maximized:</b></div>
+    <select id="Maximized" size="1">
+<option value="False"  >False</option>
+<option value="True" selected>True</option>
+</select>
+
+    <div id="labelNoDevices"><b>NoDevices:</b></div>
+    <select id="NoDevices" size="1">
+<option value="False"  selected>False</option>
+<option value="True" >True</option>
+</select>
+
+    <div id="labelIsCursorVisible"><b>IsCursorVisible:</b></div>
+    <select id="IsCursorVisible" size="1">
+<option value="False" selected>False</option>
+<option value="True" >True</option>
+</select>
+
+    <div id="labelIsWebAvailable"><b>IsWebAvailable:</b></div>
+    <select id="IsWebAvailable" size="1">
+<option value="False" selected>False</option>
+<option value="True" >True</option>
+</select>
+
+    <div id="labelServiceMode"><b>ServiceMode:</b></div>
+    <select id="ServiceMode" size="1">
+<option value="False" >False</option>
+<option value="True" selected>True</option>
+</select>
+
+    <div id="labelRightLeftNavigation"><b>RightLeftNavigation:</b></div>
+    <select id="RightLeftNavigation" size="1">
+<option value="False" >False</option>
+<option value="True" selected>True</option>
+</select>
+
+    <div id="labelDebug"><b>Debug:</b></div>
+    <select id="Debug" size="1">
+<option value="False" selected >False</option>
+<option value="True" >True</option>
+</select>
+
+    <div id="labelIntegraDataDirectory"><b>IntegraDataDirectory:</b></div>
+    <input id="IntegraDataDirectory" value="C:\IntegraSystemData\IntegraData\">
+
+    <div id="labelDoorUseRoomLightInterface"><b>DoorUseRoomLightInterface:</b></div>
+    <select id="DoorUseRoomLightInterface" size="1">
+<option value="False">False</option>
+<option value="True" selected  >True</option>
+</select>
+
+    <div id="labelShutdownWindowsViaIntegraExit"><b>ShutdownWindowsViaIntegraExit:</b></div>
+    <select id="ShutdownWindowsViaIntegraExit" size="1">
+<option value="False">False</option>
+<option value="True" selected  >True</option>
+</select>
+
+    <div id="labelHasAlarmSound"><b>HasAlarmSound:</b></div>
+    <select id="HasAlarmSound" size="1">
+<option value="False">False</option>
+<option value="True" selected  >True</option>
+</select>
+
+    <div id="labelInverseAlvoCameraCommunication"><b>InverseAlvoCameraCommunication:</b></div>
+    <select id="InverseAlvoCameraCommunication" size="1">
+<option value="False">False</option>
+<option value="True" selected  >True</option>
+</select>
+
+    <div id="labelBtnRepetitionInterval"><b>BtnRepetitionInterval:</b></div>
+    <input id="BtnRepetitionInterval" value="80">
+
+    <div id="labelBtnRepetitionDelay"><b>BtnRepetitionDelay:</b></div>
+    <input id="BtnRepetitionDelay" value="100">
+
+    <div id="labelTableDemoModeEnabled"><b>TableDemoModeEnabled:</b></div>
+    <select id="TableDemoModeEnabled" size="1">
+<option value="False" selected >False</option>
+<option value="True" >True</option>
+</select>
+
+    <div id="labelEnablePolarisLightsDedicatedView"><b>EnablePolarisLightsDedicatedView:</b></div>
+    <select id="EnablePolarisLightsDedicatedView" size="1">
+<option value="False"  >False</option>
+<option value="True" selected >True</option>
+</select>
+
+    <div id="labelEnablePolarisCameraPowerButton"><b>EnablePolarisCameraPowerButton:</b></div>
+    <select id="EnablePolarisCameraPowerButton" size="1">
+<option value="False"  >False</option>
+<option value="True" selected >True</option>
+</select>
+
+    <div id="labelShowNotificationMessages"><b>ShowNotificationMessages:</b></div>
+    <select id="ShowNotificationMessages" size="1">
+<option value="False" selected >False</option>
+<option value="True"  >True</option>
+</select>
+
+    <div id="labelMusicRestrictedDriveLetters"><b>MusicRestrictedDriveLetters:</b></div>
+    <input id="MusicRestrictedDriveLetters" value="c, e">
+
+    <div id="labelMusicRestrictedDirectory"><b>MusicRestrictedDirectory:</b></div>
+    <input id="MusicRestrictedDirectory" value="Music">
+
+
+    <div id="labelIsMilkWindowEnabled"><b>IsMilkWindowEnabled:</b></div>
+    <select id="IsMilkWindowEnabled" size="1">
+<option value="False">False</option>
+<option value="True" selected >True</option>
+</select>
+
+    <div id="labelRtlsHost"><b>RtlsHost:</b></div>
+    <input id="RtlsHost" value="dev.chimeslab.se">
+
+    <div id="labelWebGasesControlUrl"><b>WebGasesControlUrl:</b></div>
+    <input id="WebGasesControlUrl" value="http://209.162.243.100">
+
+    <div id="labelRestartTime"><b>RestartTime:</b></div>
+    <select id="RestartTime" size="1">
+<option value="False" selected>False</option>
+<option value="True">True</option>
+</select>
+
+    <div id="labelRestartIdleMinutesDelay"><b>RestartIdleMinutesDelay:</b></div>
+    <input id="RestartIdleMinutesDelay" value="30">
+
+    <div id="labelConnectionStatusCheckingDelay"><b>ConnectionStatusCheckingDelay:</b></div>
+    <input id="ConnectionStatusCheckingDelay" value="5">
+
+
+
+    <div id="buttonWsteczStr2"><a href="#pocz" class="buttonDalej">WSTECZ</a></div>
+    <div id="buttonDalejStr2"><a href="#str3" class="buttonDalej">DALEJ</a></div>
+
+    <div id="buttonWsteczStr3"><a href="#str2" class="buttonDalej">WSTECZ</a></div>
+    <div id="buttonDalejStr3"><a href="#str4" class="buttonDalej">DALEJ</a></div>
+
+    <div id="buttonWsteczStr4"><a href="#str3" class="buttonDalej">WSTECZ</a></div>
+    <div id="buttonDalejStr4"><a href="#str5" class="buttonDalej">DALEJ</a></div>
+
+    <div id="buttonWsteczStr5"><a href="#str4" class="buttonDalej">WSTECZ</a></div>
+    <div id="buttonDalejStr5"><a href="#str6" class="buttonDalej">DALEJ</a></div>
+
+    <div id="buttonWsteczStr6"><a href="#str5" class="buttonDalej">WSTECZ</a></div>
+    <div id="buttonDalejStr6"><a href="#str7" class="buttonDalej">DALEJ</a></div>
+
+    <div id="buttonWsteczStr7"><a href="#str6" class="buttonDalej">WSTECZ</a></div>
+    <div id="buttonDalejStr7"><a href="#str8" class="buttonDalej">DALEJ</a></div>
+
+    <img src="img/dev.png" id="pocz">
+    <img src="img/dev.png" id="str2">
+    <img src="img/dev.png" id="str3">
+    <img src="img/dev.png" id="str4">
+    <img src="img/dev.png" id="str5">
+    <img src="img/dev.png" id="str6">
+    <img src="img/dev.png" id="str7">
+    <img src="img/dev.png" id="str8">
+
+    <div id="labelOswietlenie"><b>Oświetlenie</b>- wybierz producenta lub model lampy do konfiguracji:</div>
+
+    <div id="blockLights">
+        <input type="checkbox" id="checkboxChromaviso" onClick="sprawdz10()">
+        <b>Chromaviso:</b>
+        <span style="visibility:hidden" id="ChromavisoAddress">Wprowadź adres IP: <input type="text" value="192.168.101.15" size="12" id="ChromavisoIp"> Wprowadź Port: <input type="text" value="10001" size="5" id="ChromavisoPort"> Port COM: <input type="text" value="" size="5" id="ChromavisoCOM"></span><br>
+
+        <input type="checkbox" id="checkboxRoom" checked onClick="sprawdz10()">
+        <b>Room:</b>
+        <span id="RoomAddress">Room label: <input type="text" value="Room" size="5" id="labelRoom">Wprowadź adres IP: <input type="text" value="192.168.101.12" size="12" id="RoomIp"> Wprowadź Port: <input type="text" value="10001" size="5" id="RoomPort"> </span><br>
+
+        <input type="checkbox" id="checkboxAnnelll" onClick="sprawdz10()">
+        <b>Annell:</b>
+        <span style="visibility:hidden" id="AnnelllAddress">Wprowadź adres IP: <input type="text" value="" size="12" id="AnnelllIp"> Wprowadź Port: <input type="text" value="10001" size="5" id="AnnelllPort">
+       Port COM: <input type="text" value="1" size="5" id="AnnelllCOM"> </span>
+        <br>
+        <input type="checkbox" id="checkboxSimeon" onClick="sprawdz10()">
+        <b>Simeon:</b>
+        <span style="visibility:hidden" id="SimeonAddress">Wprowadź adres IP: <input type="text" value="" size="12" id="SimeonIp"> Wprowadź Port: <input type="text" value="10001" size="5" id="SimeonPort">
+   Port COM: <input type="text" value="1" size="5" id="SimeonCOM"> </span>
+
+        <br>
+        <input type="checkbox" id="checkboxMach" onClick="sprawdz10()">
+        <b>Mach:</b>
+        <span style="visibility:hidden" id="MachAddress">Mach1 label: <input type="text" value="M1" size="7" id="labelMach1"> Mach2 label: <input type="text" value="M2" size="7" id="labelMach2">
+   Port COM: <input type="text" value="1" size="5" id="MachCOM"> </span>
+
+        <br>
+        <input type="checkbox" id="checkboxSola" onClick="sprawdz10()">
+        <b>Sola:</b>
+        <span style="visibility:hidden" id="SolaAddress">Wprowadź adres IP: <input type="text" value="" size="12" id="SolaIp"> Wprowadź Port: <input type="text" value="10001" size="5" id="SolaPort">
+   Port COM: <input type="text" value="1" size="5" id="SolaCOM"> </span>
+
+        <br>
+        <input type="checkbox" id="checkboxSola2" onClick="sprawdz10()">
+        <b>Sola2:</b>
+        <span style="visibility:hidden" id="Sola2Address">Wprowadź adres IP: <input type="text" value="" size="12" id="Sola2Ip"> Wprowadź Port: <input type="text" value="10001" size="5" id="Sola2Port">
+   Port COM: <input type="text" value="1" size="5" id="Sola2COM"> </span>
+
+
+        <br>
+        <input type="checkbox" id="checkboxAlvo" onClick="sprawdz10()">
+        <b>Alvo:</b>
+        <span style="visibility:hidden" id="AlvoAddress">label1: <input type="text" value="Alvo1" size="6" id="labelAlvo1">label2: <input type="text" value="Alvo2" size="6" id="labelAlvo2">Wprowadź adres IP: <input type="text" value="192.168.101.50" size="12" id="AlvoIp"> Wprowadź Port: <input type="text" value="5002" size="5" id="AlvoPort">
+    </span>
+
+        <br>
+        <input type="checkbox" id="checkboxPolaris" onClick="sprawdz10()">
+        <b>Polaris:</b>
+        <span style="visibility:hidden" id="PolarisAddress">Wprowadź adres IP: <input type="text" value="" size="12" id="PolarisIp"> Wprowadź Port: <input type="text" value="" size="5" id="PolarisPort">
+         Port COM: <input type="text" value="1" size="5" id="PolarisCOM"> </span>
+
+        <br>
+        <input type="checkbox" id="checkboxPolarisP600" onClick="sprawdz10()">
+        <b>PolarisP600:</b>
+        <span style="visibility:hidden" id="PolarisP600Address">label1: <input type="text" value="Polaris1" size="6" id="labelPolarisP6001">label2: <input type="text" value="Polaris2" size="6" id="labelPolaris2">label3: <input type="text" value="Polaris3" size="6" id="labelPolarisP6003">
+     Port COM: <input type="text" value="1" size="5" id="PolarisP600COM"> </span>
+
+        <br>
+        <input type="checkbox" id="checkboxTrilux" onClick="sprawdz10()">
+        <b>Trilux:</b>
+        <span style="visibility:hidden" id="TriluxAddress">label1: <input type="text" value="Trilux1" size="6" id="labelTrilux1">label2: <input type="text" value="Trilux2" size="6" id="labelTrilux2">
+     Port COM: <input type="text" value="1" size="5" id="TriluxCOM"> </span>
+
+
+        <br>
+        <input type="checkbox" id="checkboxTrumph" onClick="sprawdz10()">
+        <b>Trumph:</b>
+        <span style="visibility:hidden" id="TrumphAddress">Wprowadź adres IP: <input type="text" value="" size="12" id="TrumphIp"> Wprowadź Port: <input type="text" value="" size="5" id="TrumphPort">
+     Port COM: <input type="text" value="1" size="5" id="TrumphCOM"> </span>
+
+        <br>
+        <input type="checkbox" id="checkboxLedLight" onClick="sprawdz10()">
+        <b>LedLight:</b>
+        <span style="visibility:hidden" id="LedLightAddress">LedLight label: <input type="text" value="LedLight" size="5" id="labelLedLight">Wprowadź adres IP: <input type="text" value="192.168.101.112" size="12" id="LedLightIp"> Wprowadź Port: <input type="text" value="10001" size="5" id="LedLightPort">
+        </span>
+
+        <br>
+        <input type="checkbox" id="checkboxKLSMartin" onClick="sprawdz10()">
+        <b>KLSMartin:</b>
+        <span style="visibility:hidden" id="KLSMartinAddress">label1: <input type="text" value="KLSMartin2" size="6" id="labelKLSMartin1">label2: <input type="text" value="KLSMartin3" size="6" id="labelKLSMartin2">label3: <input type="text" value="KLSMartin3" size="6" id="labelKLSMartin3">
+  label4: <input type="text" value="KLSMartin4" size="6" id="labelKLSMartin4">
+ Port COM: <input type="text" value="1" size="5" id="KLSMartinCOM"> </span>
+
+    </div>
+    <div id="blockDoorsWindows">
+        <b>Drzwi / Okna</b>- wybierz ustawienia <br><br>
+
+        <input type="checkbox" id="checkboxDoor1" checked onClick="sprawdz10()"> <b>Drzwi 1(DALI):</b>
+        <span style="visibility:visible" id="parametersDoor1">label : <input type="text" value="Door1" size="7" id="labelDoor1"> button label : <input type="text" value="OPEN" size="7" id="buttonLabelDoor1">
+</span><br>
+        <input type="checkbox" id="checkboxDoor2" checked onClick="sprawdz10()"> <b>Drzwi 2(DALI):</b>
+        <span style="visibility:visible" id="parametersDoor2">label : <input type="text" value="Door2" size="7" id="labelDoor2"> button label : <input type="text" value="OPEN" size="7" id="buttonLabelDoor2">
+</span>
+        <br>
+        <input type="checkbox" id="checkboxDoor3" onClick="sprawdz10()"> <b>Drzwi 3(ROLETY):</b>
+        <span style="visibility:hidden" id="parametersDoor3">label : <input type="text" value="Door3" size="7" id="labelDoor3"> button label : <input type="text" value="OPEN" size="7" id="buttonLabelDoor3">
+</span><br><br><br>
+
+        <input type="checkbox" id="checkboxBlinds1" onClick="sprawdz10()"> <b>Roleta 1:</b>
+        <span style="visibility:visible" id="parametersBlinds1">label : <input type="text" value="WinBlinds1" size="7" id="labelBlinds1"> button UP label : <input type="text" value="UP" size="5" id="buttonUpLabelBlinds1">  button DOWN label : <input type="text" value="DOWN" size="5" id="buttonDownLabelBlinds1">
+
+</span><br>
+        <input type="checkbox" id="checkboxBlinds2" onClick="sprawdz10()"> <b>Roleta 2:</b>
+        <span style="visibility:visible" id="parametersBlinds2">label : <input type="text" value="WinBlinds2" size="7" id="labelBlinds2"> button UP label : <input type="text" value="UP" size="5" id="buttonUpLabelBlinds2">  button DOWN label : <input type="text" value="DOWN" size="5" id="buttonDownLabelBlinds2">
+
+</span>
+        <br>
+        <input type="checkbox" id="checkboxBlinds3" onClick="sprawdz10()"> <b>Roleta 3:</b>
+        <span style="visibility:visible" id="parametersBlinds3">label : <input type="text" value="WinBlinds3" size="7" id="labelBlinds3"> button UP label : <input type="text" value="UP" size="5" id="buttonUpLabelBlinds3">  button DOWN label : <input type="text" value="DOWN" size="5" id="buttonDownLabelBlinds3">
+
+</span>
+        <br><br>
+        <input type="checkbox" id="checkboxPrivaLite1" onClick="sprawdz10()"> <b>PrivaLite 1:</b>
+        <span style="visibility:visible" id="parametersPrivaLite1">label : <input type="text" value="PrivaLite1" size="7" id="labelPrivaLite1"> button label : <input type="text" value="ON/OFF" size="5" id="buttonLabelPrivaLite1">
+<br>
+</span>
+        <input type="checkbox" id="checkboxPrivaLite2" onClick="sprawdz10()"> <b>PrivaLite 2:</b>
+        <span style="visibility:visible" id="parametersPrivaLite2">label : <input type="text" value="PrivaLite2" size="7" id="labelPrivaLite2"> button label : <input type="text" value="ON/OFF" size="5" id="buttonLabelPrivaLite2">
+
+</span>
+        <br>
+        </span>
+        <input type="checkbox" id="checkboxPrivaLite3" onClick="sprawdz10()"> <b>PrivaLite 3:</b>
+        <span style="visibility:visible" id="parametersPrivaLite3">label : <input type="text" value="PrivaLite3" size="7" id="labelPrivaLite3"> button label : <input type="text" value="ON/OFF" size="5" id="buttonLabelPrivaLite3">
+
+</span>
+
+
+    </div>
+
+    <div id="blockGases">
+
+        <b>Gazy medyczne</b>- wybierz ustawienia <br><br>
+
+        <input type="checkbox" id="checkboxALVOGasess" onClick="sprawdz10()"> <b>ALVO Gazy:</b>
+        <span style="visibility:visible" id="parametersALVOGasess">
+  O2 label : <input type="text" value="O2" size="4" id="labelO2ALVOGasess">
+  N20 label : <input type="text" value="N20" size="4" id="labelN20ALVOGasess">
+  MA400 label : <input type="text" value="MA400" size="4" id="labelMA400ALVOGasess">
+  SA700 label : <input type="text" value="SA700" size="4" id="labelSA700ALVOGasess">
+  Vacuum label : <input type="text" value="Vacuum" size="4" id="labelVacuumALVOGasess">
+<br><b>brak nazwy label = brak gazu</b>
+</span>
+
+        <br>
+        <hr>
+    </div>
+
+    <div id="blockTable">
+
+        <b>Stół ALVO</b>- wybierz wersje stołu<br><br>
+
+        <input type="checkbox" id="checkboxALVOTableEtiuda" onClick="sprawdz10()"> <b>Etiuda:</b>
+        <span style="visibility:hidden" id="ALVOTableAddressEtiuda">
+   Port COM : <input type="text" value="2" size="4" id="ALVOTableCOM"></span><br>
+
+        <input type="checkbox" id="checkboxALVOTableSerenada" onClick="sprawdz10()"> <b>Serenada:</b>
+        <span style="visibility:hidden" id="ALVOTableAddressSerenada">
+ Port COM : <input type="text" value="2" size="4" id="ALVOTableCOM"></span><br>
+
+        <input type="checkbox" id="checkboxALVOTableRapsodia" onClick="sprawdz10()"> <b>Rapsodia:</b>
+        <span style="visibility:hidden" id="ALVOTableAddressRapsodia">
+ Port COM : <input type="text" value="2" size="4" id="ALVOTableCOM"></span>
+        </span>
+
+    </div>
+    <div id="blockAC">
+
+        <b>Klimatyzacja</b>- wybierz ustawienia<br><br>
+
+        <input type="checkbox" id="checkboxBlockAC" onClick="sprawdz10()"> <b>Klimatyzacja ModBus RTU/TCP:</b>
+        <span style="visibility:hidden" id="AddressAC">
+   Port COM : <input type="text" value="2" size="4" id="ACCOM">
+   Adres IP : <input type="text" value="x.x.x.x" size="4" id="ALVOTableCOM">
+   Port IP : <input type="text" value="502" size="4" id="ALVOTableCOM"><br><br>
+
+  <input type="checkbox" checked id="checkboxTemperatureSliderIsEnabled" > TemperatureSliderIsEnabled <br>
+  <input type="checkbox" checked id="checkboxTemperatureSet" > TemperatureSet<br>
+   <input type="checkbox" checked id="checkboxTemperatureGet" >TemperatureGet<br>
+   <input type="checkbox" checked id="checkboxHumiditySliderIsEnabled" >HumiditySliderIsEnabled<br>
+  <input type="checkbox" checked id="checkboxHumiditySet" > HumiditySet<br>
+   <input type="checkbox" checked id="checkboxHumidityGet" >HumidityGet<br>
+  <input type="checkbox"  id="checkboxEnableAutoCorrection" > EnableAutoCorrection<br>
+
+   <input type="checkbox"  id="checkboxButtonKlima12" >Button Label <input type="text" value="AC1" size="4" id="ButtonLabelKlima1">  Button1Klima1: <input type="text" value="ON AC1" size="4" id="Button1Klima1">    Button2Klima2: <input type="text" value="OFF AC1" size="4" id="Button2Klima2"><br>
+
+  <input type="checkbox"  id="checkboxButtonKlima34" >Button Label <input type="text" value="AC2" size="4" id="ButtonLabelKlima2">  ButtonK2lima3: <input type="text" value="ON AC2" size="4" id="Button1Klima3">  Button2Klima1: <input type="text" value="OFF AC2" size="4" id="Button2Klima4"><br>
+
+</span>
+    </div>
+    <img src="img/klima.png" id="imgKlima">
+
+    <div id="blockVideo">
+
+        <b>Video</b>- wybierz kamery którymi chcesz sterować<br><br>
+
+        <input type="checkbox" id="checkboxBlockVideo" onClick="sprawdz10()"> <b>Camera Controll:</b>
+        <span style="visibility:hidden" id="AddresVideo"><br><br>
+   
+  <input type="checkbox"  id="checkboxPTZ" > PTZ  Label <input type="text" value="PTZ" size="10" id="labelPTZ"><br>
+  <input type="checkbox" id="checkboxSonyCameraVisca" > SonyCameraVisca Label <input type="text" value="SonyVisca" size="10" id="labelSonyCameraVisca"><br>
+   <input type="checkbox"  id="checkboxAlvoCamm" > Alvo Label <input type="text" value="Alvo" size="10" id="labelAlvoCamm"><br>
+   <input type="checkbox"  id="checkboxPolarisCamm" > Polaris Label <input type="text" value="Polaris" size="10" id="labelPolarisCamm"><br>
+  <input type="checkbox"  id="checkboxTrumphCamm" > Trumph Label <input type="text" value="Trumph" size="10" id="labelTrumphCamm"><br>
+   <input type="checkbox"  id="checkboxARTHRAXCamm" > ARTHRAX Label <input type="text" value="ARTHRAX" size="10" id="labelARTHRAXCamm"><br>
+  <input type="checkbox"  id="checkboxTriluxCamm" > Trilux Label <input type="text" value="Trilux" size="10" id="labelTriluxCamm"><br>
+   <input type="checkbox"  id="checkboxSimeonCamm" > Simeon Label <input type="text" value="Simeon" size="10" id="labelSimeonCamm"><br>
+
+  <br>
+  <br>
+  
+</span>
+        <input type="submit" onclick="zmienne()">
+    </div>
+
+</html>

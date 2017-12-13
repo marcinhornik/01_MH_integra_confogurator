@@ -1,0 +1,1338 @@
+html {
+  text-align: left;
+  border: 0px dashed black;
+  text-anchor: middle x="60" y="75";
+  height: 100%;
+  width: 100%;
+}
+
+div {
+  line-height: 10px;
+  background-color: white;
+}
+
+#instrukcja {
+  padding: 2px;
+  border: 0px dashed blue;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  font-size: 2.2vw;
+}
+
+#LangApl {
+  padding: 0px;
+  position: absolute;
+  top: 3%;
+  left: 75%;
+  font-size: 1.5vw;
+}
+
+#Lang {
+  padding: 0px;
+  position: absolute;
+  top: 2%;
+  left: 91%;
+  font-size: 1.5vw;
+}
+
+#buttonZatw {
+  padding: 2px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 550;
+  left: 835;
+}
+
+#buttonDalej {
+  padding: 2px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 550;
+  left: 935;
+}
+
+#checkboxLight {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 11.5%;
+  font-size: 1.4vw;
+}
+
+#Light {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 9%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxDiater {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 2.5%;
+  font-size: 1.4vw;
+}
+
+#Diater {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 0.3%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxAnnell {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 21%;
+  font-size: 1.4vw;
+}
+
+#Annell {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 18.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxChroma {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 29.5%;
+  font-size: 1.4vw;
+}
+
+#Chroma {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 27%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxACBms {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 38%;
+  font-size: 1.4vw;
+}
+
+#ACBms {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 35.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxAC {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 47.5%;
+  font-size: 1.4vw;
+}
+
+#AC {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 45%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxStol {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 56.5%;
+  font-size: 1.4vw;
+}
+
+#Stol {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 54%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxDrzwi {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 65%;
+  font-size: 1.4vw;
+}
+
+#Drzwi {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 62.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxOkna {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 74%;
+  font-size: 1.4vw;
+}
+
+#Okna {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 71.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxStatus {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 83%;
+  font-size: 1.4vw;
+}
+
+#Status {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 80.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxDiv {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 12%;
+  left: 91.5%;
+  font-size: 1.4vw;
+}
+
+#Div {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 11%;
+  left: 89%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#checkboxMonit {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 28%;
+  left: 89%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelMonit {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 29%;
+  left: 91.5%;
+  font-size: 1.4vw;
+}
+
+#checkboxBmsMonit {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 28%;
+  left: 80%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelBmsMonit {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 29%;
+  left: 82%;
+  font-size: 1.4vw;
+}
+
+#checkboxALVOGases {
+  padding: 2px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 28%;
+  left: 71%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelALVOGases {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 29%;
+  left: 73%;
+  font-size: 1.4vw;
+}
+
+#checkboxWebGases {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 28%;
+  left: 63%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelWebGases {
+  position: absolute;
+  top: 29%;
+  left: 65%;
+  font-size: 1.4vw;
+}
+
+#checkboxVideo {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 44.5%;
+  left: 89.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelVideo {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 45.5%;
+  left: 92%;
+  font-size: 1.4vw;
+}
+
+#checkboxCamControll {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 44.5%;
+  left: 80%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelCamControll {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 45.5%;
+  left: 82.5%;
+  font-size: 1.4vw;
+}
+
+#checkboxNecMonitor {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 44.5%;
+  left: 71.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelNecMonitor {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 45.5%;
+  left: 73.5%;
+  font-size: 1.4vw;
+}
+
+#checkboxHuawei {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 44.5%;
+  left: 63.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelHuawei {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 45.5%;
+  left: 65.5%;
+  font-size: 1.4vw;
+}
+
+#checkboxBarco {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 44.5%;
+  left: 54.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelBarco {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 45.5%;
+  left: 56.5%;
+  font-size: 1.4vw;
+}
+
+#checkboxMedia {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 60%;
+  left: 89.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelMedia {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 61%;
+  left: 92%;
+  font-size: 1.4vw;
+}
+
+#checkboxVoiceNote {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelVoiceNote {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 61%;
+  left: 82.5%;
+  font-size: 1.4vw;
+}
+
+#checkboxBarcoAudio {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 60%;
+  left: 71.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelBarcoAudio {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 61%;
+  left: 73.5%;
+  font-size: 1.4vw;
+}
+
+#checkboxMp3 {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 60%;
+  left: 62.5%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelMp3 {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 61%;
+  left: 65%;
+  font-size: 1.4vw;
+}
+
+#checkboxTime {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 52%;
+  left: 10%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelTime {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 53%;
+  left: 12.5%;
+  font-size: 1.4vw;
+}
+
+#checkboxAlarm {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 62%;
+  left: 10%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelAlarm {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 63%;
+  left: 12.5%;
+  font-size: 1.4vw;
+}
+
+#checkboxBluetooth {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 73%;
+  left: 10%;
+  width: 2.2%;
+  height: 2.2%;
+}
+
+#labelBluetooth {
+  border: 0px dashed blue;
+  position: absolute;
+  top: 74%;
+  left: 12.5%;
+  font-size: 1.4vw;
+}
+
+#imgDev {
+  padding: 2px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 14%;
+  left: 0.5%;
+  width: 98%;
+  height: 10%;
+}
+
+#imgMonitoring {
+  padding: 2px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 31%;
+  left: 71.5%;
+  width: 27%;
+  height: 10%;
+}
+
+#imgGasesWeb {
+  padding: 2px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 31%;
+  left: 63.5%;
+  width: 8%;
+  height: 10%;
+}
+
+#imgVideo {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 48%;
+  left: 55%;
+  width: 43.5%;
+  height: 10%;
+}
+
+#imgAudio {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 63.5%;
+  left: 63%;
+  width: 35.5%;
+  height: 10%;
+}
+
+#imgTools {
+  position: absolute;
+  top: 47%;
+  left: 0.5%;
+  width: 10%;
+  height: 37%;
+}
+
+.buttonDalej {
+  font: bold 12px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 4px 6px 4px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  width: 7%;
+  height: 2.5%;
+  font-size: 1.1vw;
+}
+
+#buttonDalejStr1 {
+  position: absolute;
+  top: 94.1%;
+  left: 90%;
+}
+
+#buttonDalejStr2 {
+  position: absolute;
+  top: 194.1%;
+  left: 90%;
+}
+
+#buttonWsteczStr2 {
+  position: absolute;
+  top: 194.1%;
+  left: 83%;
+}
+
+#wynik4 {
+  padding: 20px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 900;
+  left: 440;
+}
+
+#orName {
+  border: 2px solid #00BD04;
+  position: absolute;
+  top: 2%;
+  left: 66%;
+  width: 5%;
+  height: 4%;
+  font-size: 1.4vw;
+}
+
+#labelorName {
+  border: 0px solid #000000;
+  position: absolute;
+  top: 3%;
+  left: 57%;
+  font-size: 1.6vw;
+}
+
+#pocz {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+}
+
+#labelNoFrame {
+  border: 0px solid #000000;
+  position: absolute;
+  top: 110%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#NoFrame {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 109%;
+  left: 12%;
+  font-size: 1.6vw;
+}
+
+#labelMaximized {
+  border: 0px solid #000000;
+  position: absolute;
+  top: 115%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#Maximized {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 114%;
+  left: 12%;
+  font-size: 1.6vw;
+}
+
+#labelNoDevices {
+  border: 0px solid #000000;
+  position: absolute;
+  top: 120%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#NoDevices {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 119%;
+  left: 12%;
+  font-size: 1.6vw;
+}
+
+#labelIsCursorVisible {
+  border: 0px solid #000000;
+  position: absolute;
+  top: 125%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#IsCursorVisible {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 124%;
+  left: 15%;
+  font-size: 1.6vw;
+}
+
+#labelIsWebAvailable {
+  border: 0px solid #000000;
+  position: absolute;
+  top: 130%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#IsWebAvailable {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 129%;
+  left: 15%;
+  font-size: 1.6vw;
+}
+
+#labelServiceMode {
+  position: absolute;
+  top: 135%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#ServiceMode {
+  border: 2px solid green;
+  position: absolute;
+  top: 134%;
+  left: 15%;
+  font-size: 1.6vw;
+}
+
+#labelRightLeftNavigation {
+  position: absolute;
+  top: 140%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#RightLeftNavigation {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 139%;
+  left: 18%;
+  font-size: 1.6vw;
+}
+
+#labelDebug {
+  position: absolute;
+  top: 145%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#Debug {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 144%;
+  left: 10%;
+  font-size: 1.6vw;
+}
+
+#labelIntegraDataDirectory {
+  position: absolute;
+  top: 150%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#IntegraDataDirectory {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 149%;
+  left: 20%;
+  width: 30%;
+  font-size: 1.6vw;
+}
+
+#labelDoorUseRoomLightInterface {
+  position: absolute;
+  top: 155%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#DoorUseRoomLightInterface {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 154%;
+  left: 25%;
+  font-size: 1.6vw;
+}
+
+#labelShutdownWindowsViaIntegraExit {
+  position: absolute;
+  top: 160%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#ShutdownWindowsViaIntegraExit {
+  border: 2px solid green;
+  position: absolute;
+  top: 159%;
+  left: 28%;
+  font-size: 1.6vw;
+}
+
+#labelHasAlarmSound {
+  position: absolute;
+  top: 165%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#HasAlarmSound {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 164%;
+  left: 15%;
+  font-size: 1.6vw;
+}
+
+#labelInverseAlvoCameraCommunication {
+  position: absolute;
+  top: 170%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#InverseAlvoCameraCommunication {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 169%;
+  left: 29%;
+  font-size: 1.6vw;
+}
+
+#labelBtnRepetitionInterval {
+  position: absolute;
+  top: 175%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#BtnRepetitionInterval {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 174%;
+  left: 21%;
+  width: 7%;
+  font-size: 1.6vw;
+}
+
+#labelBtnRepetitionDelay {
+  position: absolute;
+  top: 180%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#BtnRepetitionDelay {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 179%;
+  left: 21%;
+  width: 7%;
+  font-size: 1.6vw;
+}
+
+#labelTableDemoModeEnabled {
+  position: absolute;
+  top: 185%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#TableDemoModeEnabled {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 184%;
+  left: 21%;
+  font-size: 1.6vw;
+}
+
+#labelEnablePolarisLightsDedicatedView {
+  position: absolute;
+  top: 190%;
+  left: 3%;
+  font-size: 1.6vw;
+}
+
+#EnablePolarisLightsDedicatedView {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 189%;
+  left: 30%;
+  font-size: 1.6vw;
+}
+
+#labelEnablePolarisCameraPowerButton {
+  position: absolute;
+  top: 110%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#EnablePolarisCameraPowerButton {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 109%;
+  left: 80%;
+  font-size: 1.6vw;
+}
+
+#labelShowNotificationMessages {
+  position: absolute;
+  top: 115%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#ShowNotificationMessages {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 114%;
+  left: 74%;
+  font-size: 1.6vw;
+}
+
+#labelMusicRestrictedDriveLetters {
+  position: absolute;
+  top: 120%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#MusicRestrictedDriveLetters {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 119%;
+  left: 77%;
+  width: 7%;
+  font-size: 1.6vw;
+}
+
+#labelMusicRestrictedDirectory {
+  position: absolute;
+  top: 125%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#MusicRestrictedDirectory {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 124%;
+  left: 73%;
+  width: 7%;
+  font-size: 1.6vw;
+}
+
+#labelIsMilkWindowEnabled {
+  position: absolute;
+  top: 130%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#IsMilkWindowEnabled {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 129%;
+  left: 73%;
+  font-size: 1.6vw;
+}
+
+#labelRtlsHost {
+  position: absolute;
+  top: 135%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#RtlsHost {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 134%;
+  left: 60%;
+  width: 17%;
+  font-size: 1.6vw;
+}
+
+#labelWebGasesControlUrl {
+  position: absolute;
+  top: 140%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#WebGasesControlUrl {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 139%;
+  left: 70%;
+  width: 17%;
+  font-size: 1.6vw;
+}
+
+#labelRestartTime {
+  position: absolute;
+  top: 145%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#RestartTime {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 144%;
+  left: 65%;
+  font-size: 1.6vw;
+}
+
+#labelRestartIdleMinutesDelay {
+  position: absolute;
+  top: 150%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#RestartIdleMinutesDelay {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 149%;
+  left: 73%;
+  width: 7%;
+  font-size: 1.6vw;
+}
+
+#labelConnectionStatusCheckingDelay {
+  position: absolute;
+  top: 155%;
+  left: 53%;
+  font-size: 1.6vw;
+}
+
+#ConnectionStatusCheckingDelay {
+  border: 1px solid #E5E467;
+  position: absolute;
+  top: 154%;
+  left: 77%;
+  width: 7%;
+  font-size: 1.6vw;
+}
+
+#str2 {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 100%;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+}
+
+#str3 {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 200%;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+}
+
+#str4 {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 300%;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+}
+
+#str5 {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 400%;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+}
+#str6 {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 500%;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+}
+
+#str7 {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 600%;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+}
+#str8 {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 700%;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+}
+
+#buttonDalejStr3 {
+  padding: 0px;
+  position: absolute;
+  top: 294.1%;
+  left: 90%;
+}
+
+#buttonWsteczStr3 {
+  position: absolute;
+  top: 294.1%;
+  left: 83%;
+}
+
+#buttonDalejStr4 {
+  padding: 0px;
+  position: absolute;
+  top: 394.1%;
+  left: 90%;
+}
+
+#buttonWsteczStr4 {
+  position: absolute;
+  top: 394.1%;
+  left: 83%;
+}
+#buttonDalejStr5 {
+  padding: 0px;
+  position: absolute;
+  top: 494.1%;
+  left: 90%;
+}
+
+#buttonWsteczStr5 {
+  position: absolute;
+  top: 494.1%;
+  left: 83%;
+}
+
+#buttonDalejStr6 {
+  padding: 0px;
+  position: absolute;
+  top: 594.1%;
+  left: 90%;
+}
+
+#buttonWsteczStr6 {
+  position: absolute;
+  top: 594.1%;
+  left: 83%;
+}
+
+
+
+#buttonDalejStr7 {
+  padding: 0px;
+  position: absolute;
+  top: 694.1%;
+  left: 90%;
+}
+
+#buttonWsteczStr7 {
+  position: absolute;
+  top: 694.1%;
+  left: 83%;
+}
+
+#labelOswietlenie {
+  border: 0px solid #E5E467;
+  position: absolute;
+  top: 203%;
+  left: 1%;
+  font-size: 1.8vw;
+}
+
+/*
+#ChromavisoAddress {
+  visibility: hidden;
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 210%;
+  left: 17%;
+}
+
+#checkboxChromaviso {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 210%;
+  left: 5%;
+}
+
+#labelChromaviso {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 210.8%;
+  left: 7%;
+}
+#RoomAddress {
+
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 215%;
+  left: 17%;
+}
+
+#checkboxRoom {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 215%;
+  left: 5%;
+}
+
+#labelRoom {
+  padding: 0px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 215.8%;
+  left: 7%;
+}*/
+#blockLights {
+  padding: 0px;
+  line-height: 30px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 210%;
+  left: 5%;
+  width: 90%;
+}
+#blockDoorsWindows{
+  padding: 0px;
+  line-height: 30px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 305%;
+  left: 5%;
+  width: 90%;
+}
+
+#blockGases{
+  padding: 0px;
+  line-height: 30px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 405%;
+  left: 5%;
+  width: 90%;
+}
+
+#blockTable{
+  padding: 0px;
+  line-height: 30px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 440%;
+  left: 5%;
+  width: 90%;
+}
+
+#blockAC{
+  padding: 0px;
+  line-height: 30px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 505%;
+  left: 5%;
+  width: 90%;
+}
+
+
+#imgKlima{
+  padding: 0px;
+  line-height: 30px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 520%;
+  left: 50%;
+  width: 40%;
+  height: 40%
+}
+
+#blockVideo{
+  padding: 0px;
+  line-height: 30px;
+  border: 0px dashed blue;
+  position: absolute;
+  top: 605%;
+  left: 5%;
+  width: 90%;
+}
+
